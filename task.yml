@@ -1,0 +1,9 @@
+---
+- hosts: dev
+  user: ansible
+  become: true
+  tasks:
+         - name: git install in dev nodes
+           yum:
+             name: git
+             state: installed
